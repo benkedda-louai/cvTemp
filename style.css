@@ -1,0 +1,374 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* container in the phone screen */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.upperline,
+.underline {
+    width: 100%;
+    background-color: black;
+}
+
+.upperline {
+    height: 4px;
+}
+
+.underline {
+    height: 3px;
+}
+
+.title {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 23px;
+    }
+}
+
+.personalInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.personalInfo .name {
+    font-weight: bold;
+    line-height: 2;
+}
+
+
+.personalInfo .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+
+.personalInfo a {
+    font-size: 25px;
+    font-weight: 500;
+    color: blue;
+    transition: all;
+    transition-duration: 300ms;
+    text-decoration: none;
+}
+
+.personalInfo a:hover {
+    font-size: 27px;
+}
+
+.personalInfo .job {
+    font-size: 27px;
+    font-weight: bold;
+    margin-top: 35px;
+}
+
+@media (max-width: 768px) {
+    .personalInfo .contact {
+        font-size: 18px;
+        flex-wrap: wrap;
+    }
+
+    .personalInfo .name {
+        font-size: 25px;
+    }
+
+    .personalInfo a {
+        font-size: 23px;
+    }
+
+    .personalInfo .job {
+        font-size: 23px;
+    }
+}
+
+.summary {
+    margin: 20px 0px;
+}
+
+.summary .summaryP {
+    width: 85%;
+    font-size: 23px;
+    font-weight: normal;
+    padding: 15px 0px;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .summary .summaryP {
+        font-size: 20px;
+        line-height: 1.2;
+        padding: 5px 0 3px 0;
+    }
+}
+
+.education .divEdu {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.education .divEdu p:first-child {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 1.7;
+}
+
+.education .divEdu p:nth-child(2),
+.education .divEdu p:last-child {
+    font-size: 22.5px;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-left: 50px;
+}
+
+@media (max-width: 768px) {
+    .education .divEdu {
+        padding: 5px 0;
+    }
+
+    .education .divEdu p:first-child {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .education .divEdu p:nth-child(2),
+    .education .divEdu p:last-child {
+        font-size: 18px;
+        margin-left: 30px;
+        line-height: 1.5;
+    }
+}
+
+.expert .projects {
+    padding: 15px;
+}
+
+.expert .projects ul li .projectP {
+    font-size: 27px;
+    font-weight: bold;
+    line-height: 2;
+}
+
+.expert .projects ul li ul li {
+    margin-left: 50px;
+    font-size: 23px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.expert .projects ul li ul li .clinic,
+.expert .projects ul li ul li .e_commerce {
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.expert .projects ul li ul li ul li {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.expert .projects ul li ul li ul li h4,
+.expert .projects ul li ul li ul li p {
+    display: inline;
+}
+
+@media (max-width: 768px) {
+    .expert .projects ul li .projectP {
+        font-size: 25px;
+    }
+
+    .expert .projects ul li ul li {
+        font-size: 20px;
+        margin-left: 30px;
+    }
+
+    .expert .projects ul li ul li .clinic,
+    .expert .projects ul li ul li .e_commerce {
+        font-size: 19px;
+    }
+
+    .expert .projects ul li ul li ul li {
+        font-size: 17px;
+    }
+}
+
+.skills .allSkills {
+    padding: 15px;
+}
+
+.skills .allSkills .techSkill {
+    margin-left: 50px;
+}
+
+.skills .allSkills .techSkill h4 {
+    font-size: 25px;
+}
+
+.skills .allSkills .techSkill ul {
+    margin-left: 50px;
+    padding: 5px 0px;
+}
+
+.skills .allSkills .techSkill ul li {
+    font-size: 23px;
+}
+
+.skills .allSkills .techSkill ul li h5 {
+    display: inline;
+}
+
+
+.skills .allSkills .softSkill {
+    margin-left: 50px;
+    padding: 5px 0px;
+}
+
+.skills .allSkills .softSkill h4 {
+    font-size: 25px;
+    display: inline;
+}
+
+.skills .allSkills .softSkill span {
+    font-size: 23px;
+}
+
+@media (max-width: 768px) {
+    .skills .allSkills {
+        padding: 5px;
+    }
+
+    .skills .allSkills .techSkill {
+        margin-left: 30px;
+    }
+
+    .skills .allSkills .techSkill h4 {
+        font-size: 23px;
+    }
+
+    .skills .allSkills .techSkill ul li {
+        font-size: 20px;
+    }
+
+    .skills .allSkills .techSkill ul li {
+        margin-left: 30px;
+    }
+
+    .skills .allSkills .softSkill {
+        margin-left: 30px;
+    }
+
+    .skills .allSkills .softSkill h4 {
+        font-size: 23px;
+    }
+
+    .skills .allSkills .softSkill span {
+        font-size: 20px;
+    }
+}
+
+.courses .cours {
+    padding: 15px;
+    margin-left: 50px;
+}
+
+.courses .cours .coursTitle {
+    font-size: 27px;
+}
+
+.courses .cours h5 {
+    font-size: 25px;
+}
+
+.courses .cours span:first-child {
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 1.7;
+}
+
+.courses .cours span:last-child {
+    font-size: 21px;
+    font-weight: normal;
+}
+
+@media (max-width: 768px) {
+    .courses .cours {
+        padding: 5px;
+        margin-left: 30px;
+    }
+
+    .courses .cours .coursTitle {
+        font-size: 25px;
+    }
+
+    .courses .cours h5 {
+        font-size: 23px;
+    }
+    .courses .cours span:first-child {
+        font-size: 20px;
+    }
+    .courses .cours span:last-child {
+        font-size: 18px;
+    }
+}
+
+.addInfo ul {
+    padding: 15px;
+    margin-left: 50px;
+}
+
+.addInfo ul li span:first-child {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.addInfo ul li span:last-child {
+    font-size: 23px;
+    font-weight: normal;
+}
+
+@media (max-width: 768px) {
+    .addInfo ul {
+        padding: 5px;
+        margin-left: 30px;
+    }
+     
+    .addInfo ul li span:first-child {
+        font-size: 23px;
+    }
+
+    .addInfo ul li span:last-child {
+        font-size: 20px;
+        font-weight: normal;
+    }
+}
